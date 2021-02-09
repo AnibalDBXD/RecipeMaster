@@ -1,0 +1,66 @@
+@import "../../../sizes.scss";
+
+.times {
+  grid-area: 1 / 2 / 2 / 3;
+  width: fit-content;
+  height: fit-content;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 2px 5px 33px -14px rgba(0, 0, 0, 0.69);
+  list-style: none;
+}
+
+.times__item {
+  font-family: var(--font-text);
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.times__ico {
+  color: var(--gray);
+  font-size: 2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.times__icoPrimary {
+  color: var(--orange);
+}
+
+.times__text {
+  margin-left: 0.5rem;
+}
+
+.times__title {
+  text-transform: uppercase;
+  color: var(--light-gray);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.times__time {
+  font-weight: 500;
+  color: var(--dark-gray);
+}
+
+.times__timePrimary {
+  color: var(--orange);
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .times {
+    grid-area: 1/1/2/3;
+    display: flex;
+    padding: 1.5rem;
+    width: 100%;
+    overflow: scroll;
+    height: auto;
+  }
+  .times__item {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}

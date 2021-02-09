@@ -1,0 +1,22 @@
+.instruction {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.numbercontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-title);
+  margin-right: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--orange);
+  font-size: 1.4rem;
+  color: white;
+}
+
+.instruction__text {
+  width: 90%;
+  font-family: var(--font-text);
+}

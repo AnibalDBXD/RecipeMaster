@@ -1,0 +1,32 @@
+@import "../../../utils.scss";
+@import "../../../sizes.scss";
+
+.ingredients {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.ingredients__title {
+  @include titles;
+  color: var(--dark-gray);
+  font-size: 1.5rem;
+}
+
+.food {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.food__name {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--dark-gray);
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .ingredients {
+    grid-area: 2/1/3/2;
+  }
+}

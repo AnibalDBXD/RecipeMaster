@@ -1,0 +1,27 @@
+@import "../../utils.scss";
+
+.Recipe {
+  height: 200px;
+  width: 200px;
+  background-image: url("/images/photo1.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: var(--border-radius);
+
+  @include flexCenter;
+
+  font-size: 0.1rem;
+  &:hover {
+    transition: 0.5s ease-out;
+    transition-property: filter, font-size;
+    filter: brightness(70%);
+    font-size: 1.2rem;
+    .Recipe__title {
+      display: block;
+    }
+  }
+}
+
+.Recipe__title {
+  display: none;
+}

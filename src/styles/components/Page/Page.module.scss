@@ -1,0 +1,15 @@
+@import "../../sizes.scss";
+
+.Page {
+  width: 98vw;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: var(--background-color);
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .Page {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
