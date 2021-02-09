@@ -8,6 +8,8 @@
   border-radius: var(--border-radius);
   box-shadow: 2px 5px 33px -14px rgba(0, 0, 0, 0.69);
   list-style: none;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .times__item {
@@ -54,12 +56,11 @@
     display: flex;
     padding: 1.5rem;
     width: 100%;
-    overflow: scroll;
     height: auto;
   }
   .times__item {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
